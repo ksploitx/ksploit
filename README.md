@@ -13,7 +13,7 @@
 
 _Full-stack developer & AI engineer — security · machine learning · scalable architecture_
 
-[![Live on Cloudflare](https://img.shields.io/badge/LIVE-ksploitx.pages.dev-00ff88?style=for-the-badge&logo=cloudflare&logoColor=black)](https://ksploitx.pages.dev)&nbsp;&nbsp;[![Live on GitHub Pages](https://img.shields.io/badge/MIRROR-khushneetsingh.github.io-ffffff?style=for-the-badge&logo=github&logoColor=black)](https://khushneetsingh.github.io/ksploitx)
+[![Live on Cloudflare](https://img.shields.io/badge/LIVE-ksploitx.pages.dev-00ff88?style=for-the-badge&logo=cloudflare&logoColor=black)](https://ksploitx.pages.dev)&nbsp;&nbsp;[![Live on GitHub Pages](https://img.shields.io/badge/MIRROR-khushneetsingh.github.io-ffffff?style=for-the-badge&logo=github&logoColor=black)](https://khushneetsingh.github.io/ksploit)
 
 [![GitHub](https://img.shields.io/badge/GitHub-KhushneetSingh-181717?style=flat-square&logo=github)](https://github.com/KhushneetSingh)&nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Khushneet_Singh-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/khushneet-singh)&nbsp;
@@ -109,8 +109,8 @@ Hit **TERMINAL_ACCESS** in the navbar to drop into the shell.
 
 ```bash
 # Clone
-git clone https://github.com/KhushneetSingh/ksploitx.git
-cd ksploitx
+git clone https://github.com/KhushneetSingh/ksploit.git
+cd ksploit
 
 # Install
 npm install
@@ -146,7 +146,7 @@ The workflow lives at `.github/workflows/deploy-gh-pages.yml` and publishes to t
 | URL                                                                            | Host             |
 | ------------------------------------------------------------------------------ | ---------------- |
 | [ksploitx.pages.dev](https://ksploitx.pages.dev)                               | Cloudflare Pages |
-| [khushneetsingh.github.io/ksploitx](https://khushneetsingh.github.io/ksploitx) | GitHub Pages     |
+| [khushneetsingh.github.io/ksploit](https://khushneetsingh.github.io/ksploit) | GitHub Pages     |
 
 ---
 
