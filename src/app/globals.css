@@ -1344,3 +1344,157 @@ a:focus-visible .timeline-card {
   background-clip: text;
 }
 
+/* ── Experience Card ────────────────────────────────── */
+
+.exp-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.exp-card:hover {
+  border-color: rgba(0, 255, 136, 0.4);
+  box-shadow:
+    0 0 30px rgba(0, 255, 136, 0.06),
+    0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Company logo container */
+.exp-company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Blend white logo backgrounds into the dark card surface */
+.exp-company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.exp-card:hover .exp-company-logo {
+  border-color: rgba(0, 255, 136, 0.3);
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.06);
+}
+
+/* Header row: left meta block + right date/location pills */
+.exp-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 24px 0;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 639px) {
+  .exp-card-header {
+    flex-direction: column;
+    padding: 20px 20px 0;
+  }
+}
+
+/* Right-side meta pills container */
+.exp-card-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 639px) {
+  .exp-card-meta {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* Date / location pill */
+.exp-meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-muted-light);
+  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+
+/* Thin separator between header and bullets */
+.exp-card-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 20px 24px 0;
+}
+
+@media (max-width: 639px) {
+  .exp-card-divider {
+    margin: 16px 20px 0;
+  }
+}
+
+/* Bullet list */
+.exp-bullets {
+  list-style: none;
+  padding: 20px 24px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 639px) {
+  .exp-bullets {
+    padding: 16px 20px;
+  }
+}
+
+/* Individual bullet row */
+.exp-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Accent square bullet dot */
+.exp-bullet-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 6px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exp-card:hover .exp-bullet-dot {
+  opacity: 1;
+  box-shadow: 0 0 6px rgba(0, 255, 136, 0.5);
+}
+
+/* Footer: tech pills row */
+.exp-card-footer {
+  padding: 16px 24px 24px;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 639px) {
+  .exp-card-footer {
+    padding: 14px 20px 20px;
+  }
+}
