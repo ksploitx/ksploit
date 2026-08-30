@@ -33,6 +33,8 @@ export interface ExperienceEntry {
   bullets: string[];
   /** Tech stack tags — rendered as tech-pills using TECH_ICON_MAP */
   tech: string[];
+  /** Optional company logo — path relative to /public, run through getImagePath */
+  logoUrl?: string;
 }
 
 export interface TimelineLink {
