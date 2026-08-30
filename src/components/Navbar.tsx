@@ -7,6 +7,7 @@ import Terminal from "@/components/ui/Terminal";
 
 const NAV_LINKS = [
   { label: "PROJECTS", href: "#projects" },
+  { label: "EXPERIENCE", href: "#experience" },
   { label: "SKILLS", href: "#skills" },
   { label: "ABOUT", href: "#about" },
   { label: "CONTACT", href: "#contact" },
