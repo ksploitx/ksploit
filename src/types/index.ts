@@ -20,6 +20,21 @@ export interface SkillCategory {
   skills: string[];
 }
 
+export interface ExperienceEntry {
+  id: string;
+  /** Terminal-style all-caps identifier, like project codenames */
+  codename: string;
+  title: string;
+  company: string;
+  /** Date range string, e.g. "Jan 2024 – Mar 2024" */
+  duration: string;
+  /** Location string, e.g. "Remote" or "Bengaluru, IN" */
+  location: string;
+  bullets: string[];
+  /** Tech stack tags — rendered as tech-pills using TECH_ICON_MAP */
+  tech: string[];
+}
+
 export interface TimelineLink {
   url: string;
   label: string;

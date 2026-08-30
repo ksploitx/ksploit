@@ -95,4 +95,5 @@ export const TECH_ICON_MAP: Record<string, string | null> = {
   "Lucide React": null,
   "scikit-learn": null,
   OpenRouter: null,
+  Swagger: `${DEVICON_BASE}/swagger/swagger-original.svg`,
 };
