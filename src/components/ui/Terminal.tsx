@@ -232,8 +232,8 @@ export default function Terminal({ isOpen, onClose }: TerminalProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100]"
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="fixed inset-0 bg-background/80 backdrop-blur-md z-[100]"
             onClick={onClose}
           />
 
@@ -242,16 +242,16 @@ export default function Terminal({ isOpen, onClose }: TerminalProps) {
             initial={{ y: "100%", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "100%", opacity: 0 }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-4 md:inset-12 lg:inset-20 bg-[#0a0a0a] border border-accent/30 z-[101] flex flex-col overflow-hidden"
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="fixed inset-4 md:inset-12 lg:inset-20 bg-surface-container border border-border z-[101] flex flex-col overflow-hidden"
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-4 py-3 border-b border-accent/20 bg-[#0d0d0d]">
+            <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-surface">
               <div className="flex items-center gap-3">
                 <div className="flex gap-1.5">
-                  <span className="w-2.5 h-2.5 bg-red-500/80 inline-block" />
-                  <span className="w-2.5 h-2.5 bg-yellow-500/80 inline-block" />
-                  <span className="w-2.5 h-2.5 bg-accent/80 inline-block" />
+                  <span className="w-2.5 h-2.5 border border-muted inline-block" />
+                  <span className="w-2.5 h-2.5 border border-muted inline-block" />
+                  <span className="w-2.5 h-2.5 bg-accent inline-block glow-green" />
                 </div>
                 <span className="font-mono text-xs text-accent/70">
                   KSPLOITX_TERMINAL v1.0.0
@@ -276,7 +276,7 @@ export default function Terminal({ isOpen, onClose }: TerminalProps) {
                       ? "text-accent/60"
                       : line.type === "input"
                         ? "text-accent glow-green"
-                        : "text-foreground/80"
+                        : "text-muted-light"
                   }`}
                 >
                   {line.content}
@@ -286,7 +286,7 @@ export default function Terminal({ isOpen, onClose }: TerminalProps) {
 
             {/* Input */}
             {booted && (
-              <div className="flex items-center px-4 py-3 border-t border-accent/20 bg-[#0d0d0d]">
+              <div className="flex items-center px-4 py-3 border-t border-border bg-surface">
                 <span className="font-mono text-accent glow-green mr-2">
                   &gt;
                 </span>
