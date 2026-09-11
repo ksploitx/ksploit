@@ -46,3 +46,6 @@ Thumbs.db
 
 #docs
 public/projects
+
+# Reports
+REPO_STATE_REPORT.md
